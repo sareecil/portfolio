@@ -13,14 +13,15 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
-.container {
+/* .container {
   display: grid;
-}
+} */
 
 .content {
   color: white;
   height: 100vh;
   background: #1e1e1e;
+
 }
 
 
@@ -60,7 +61,7 @@ a {
 }
 
 .nav h2 {
-  border-bottom: 1px dashed grey;
+  border-bottom: 1px solid grey;
   width: 40vh;
   margin-bottom: 40px;
   font-size: 100px;
@@ -84,6 +85,7 @@ a {
 }
 
 .navbar {
+  position: fixed;
   display: grid;
   grid-area: navbar;
 }
@@ -105,18 +107,50 @@ a {
   grid-template-areas: "navbar projects";
 }
 
+.p-title {
+  grid-area: p-title;
+}
+
 .p-title h1 {
   color: black;
+  font-size: 150px;
+  position: absolute;
+  top: 20px;
+  right: 0;
+  padding-right: 200px;
+}
+
+.boxs {
+  position: absolute;
+  bottom: 500px;
+  left: 200px;
+  
+}
+
+.box img {
+  width: 200px;
+}
+
+.about-title {
   font-size: 150px;
   position: absolute;
   right: 0;
   padding-right: 200px;
 }
 
-.sliderimg{
-  padding-left: 200px;
+.about {
+  position: absolute;
+  top: 250px;
+  left: 400px;
+}
+
+.about p {
+  width: 600px;
+  font-size: 17px;
+  padding-bottom: 50px;
+}
+
+.links {
+  position: absolute;
   bottom: 0;
-  width: 500px;
-  height: 500px;
-  object-fit: cover
 }
