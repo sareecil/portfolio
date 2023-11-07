@@ -1,0 +1,122 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'League Spartan', sans-serif;
+  font-family: 'Raleway', sans-serif;
+}
+
+.container {
+  display: grid;
+}
+
+.content {
+  color: white;
+  height: 100vh;
+  background: #1e1e1e;
+}
+
+
+.title {
+  position: absolute;
+  bottom: 470px ;
+  right: 0;
+  padding-right: 300px;
+}
+
+h1 {
+  font-size: 200px;
+}
+
+.subtitle {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  top: 450px;
+  right: 350px ;
+}
+
+.subtitle p {
+  padding-top: 70px; 
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav {
+  width: 200px;
+  margin-left: 220px;
+  padding-top: 200px;
+  text-align: center;
+}
+
+.nav h2 {
+  border-bottom: 1px dashed grey;
+  width: 40vh;
+  margin-bottom: 40px;
+  font-size: 100px;
+  
+}
+
+.nav h2:hover {
+  background-color: rgba(156, 152, 152, 0.349);
+  border-radius: 20px;
+}
+
+.navbar-item {
+  width: 100px;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.911);
+  border-right: 1px solid black
+
+}
+
+.navbar {
+  display: grid;
+  grid-area: navbar;
+}
+
+.navbar a {
+  transform: rotate(270deg);
+  padding: 15px 60px;
+  padding-left: 20px;
+  color: black;
+}
+
+.navbar a:hover {
+  background-color: rgba(54, 53, 53, 0.349);
+  border-radius: 20px;
+}
+
+.projects {
+  grid-area: projects;
+  grid-template-areas: "navbar projects";
+}
+
+.p-title h1 {
+  color: black;
+  font-size: 150px;
+  position: absolute;
+  right: 0;
+  padding-right: 200px;
+}
+
+.sliderimg{
+  padding-left: 200px;
+  bottom: 0;
+  width: 500px;
+  height: 500px;
+  object-fit: cover
+}
